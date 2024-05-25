@@ -1,43 +1,11 @@
 # Setup NetHunter on Nexus5
 
-How to Setup Kali NetHunter for Nexus5.
+How to setup NetHunter for Nexus5.
 
 Nexus5 can use Nexmon for the some wifi tools.  
-I Would try to use it next Wifi penetration test engagement.
+I would try to use it next Wifi penetration test engagement.
 
-## Summary
-
-1. Enable developer mode on Android
-2. Enable USB debug at developer mode
-3. Connect PC and OEM Unlock in bootloader by `fastboot oem unlock` commands
-4. Install Latest TWRP `fastboot flash recovery twrp-3.7.0_9-0-hammerheadcaf.img`
-5. Download Android 6 (marshmallow) image of Nexus 5 
-6. Install OS to Nexus 5
-7. Download and install Magisk Manager from Magisk github repo using Web browser of Nexus5 
-8. Download Magisk.apk by PC also and change its file name as Magisk.zip from apk
-9. Copy it to Android by `adb push` command in TWRP
-10. Install Magisk.zip
-11. Restart OS and reinstall Magisk by Magisk manager app to be true root.
-12. Build nethunter image by kali official resource (Don't use `-fs full`, it makes updater error, I used nano. /system space is not enough for minimal)
-13. Copy built nethunter image and install it from TWRP
-14. Install Kali Chroot Manager  (Choose kalifs-armhf-minimal.tar.xz)
-    - Downlaod from https://build.nethunter.com/kalifs/kalifs-latest/
-    - install from NetHunter App
-    - Directory is 
-15. select kali-armhf as chroot
-16. update from NetHunter app
-
-## References
-
-- https://gist.github.com/jmingov/4fd6d02ae75cdedd62144623725ef6e6
-- https://pwnieexpres.com/blogs/news/a-simple-guide-to-installing-nethunter-on-a-nexus-5x
-- https://www.getdroidtips.com/install-official-twrp-recovery-for-nexus-5/
-
-
-## Memo
-
-Some app not working...  
-Aircruck-ng is work.
+> Note: Note: Some apps may not work properly. However, Aircrack-ng seems to work fine. I have only tested listing Wi-Fi access points and did not attempt any attacks.
 
 <br>
 
@@ -129,7 +97,7 @@ fastboot mode -> Recovery
 
 ### 6. Wipe and format strage for the mount
 
-Even strage was not able to be mounted. following steps are good for restore. 
+I was not able to be mounted /system directory. Following steps are good for it fix. 
 
 Reference: https://droidwin.com/failed-to-mount-data-invalid-argument-in-twrp-fix/
 
@@ -149,7 +117,7 @@ e. Wipe > Format Data > enter YES
 
 After wiping and re-format ext4fs. Internal Strage of Nexus5 will apear.
 
-![alt text](image.png)
+![alt text](01_images/Internal_Strage.png)
 
 ### 7. Install Android 6 from Factory Image
 
@@ -218,3 +186,12 @@ If you crash OS, You can restart from the factory image.
 Factory Image: https://developers.google.com/android/images#hammerhead
 
 Unzip > run flash-all.sh
+
+
+
+## Refered contents
+
+- https://gist.github.com/jmingov/4fd6d02ae75cdedd62144623725ef6e6
+- https://pwnieexpres.com/blogs/news/a-simple-guide-to-installing-nethunter-on-a-nexus-5x
+- https://www.getdroidtips.com/install-official-twrp-recovery-for-nexus-5/
+
