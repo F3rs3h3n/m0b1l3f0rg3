@@ -15,7 +15,7 @@ Disable "Automatic system updates"
 
 Enable USB debugging 
 
-<img src="01_images/USBDebugging.png" width="400">  
+<img src="01_images/USBdebugging.png" width="400">  
 
 
 ## 2. Settings > Connected devices > USB
