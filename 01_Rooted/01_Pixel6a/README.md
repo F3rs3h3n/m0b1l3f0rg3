@@ -7,22 +7,22 @@ This project is intended for educational and research purposes only. The use of 
 
 Enable "Stay awake"
 
-<img src="./01_images/stayawake.png" width="400">  
+<img src="01_images/stayawake.png" width="400">  
 
 Disable "Automatic system updates"
 
-<img src="./01_images/AutomaticSystemUpdates.png" width="400">  
+<img src="01_images/AutomaticSystemUpdates.png" width="400">  
 
 Enable USB debugging 
 
-<img src="./01_images/USBDebugging.png" width="400">  
+<img src="01_images/USBDebugging.png" width="400">  
 
 
 ## 2. Settings > Connected devices > USB
 
 Select "File transfer / Android Auto"
 
-<img src="./01_images/USB.png" width="300">  
+<img src="01_images/USB.png" width="300">  
 
 <br>
 
