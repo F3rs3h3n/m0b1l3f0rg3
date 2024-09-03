@@ -22,7 +22,7 @@ Enable USB debugging
 
 Select "File transfer / Android Auto"
 
-<img src="01_images/USB.png" width="300">  
+<img src="01_images/USB.png" width="250">  
 
 <br>
 
